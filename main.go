@@ -1,9 +1,7 @@
 package main
 
-import (
-  "fmt"
-)
+import ()
 
 func main() {
-  fmt.Println("Hello World!!")
+	queryClient(12, 10)
 }
