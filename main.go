@@ -1,7 +1,15 @@
 package main
 
-import ()
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	queryClient(12, 10)
+  var query queryRows 
+
+  endtime := time.Now()
+  startTime := time.Now().Add(-24 *time.Hour)
+  query.queryClientTime(24, startTime, endtime)
+  fmt.Println(query.rows)
 }
